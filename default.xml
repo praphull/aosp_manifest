@@ -25,7 +25,9 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="manifest" name="manifest" remote="aospa" />
+  <project path="manifest" name="manifest" remote="aospa">
+    <copyfile src="build-mac.sh" dest="rom-build-mac.sh" />
+  </project>
 
   <project path="build" name="android_build" remote="aospa" >
     <copyfile src="core/root.mk" dest="Makefile" />
