@@ -21,11 +21,15 @@
   <remote  name="github"
            fetch="https://github.com" />
 
+  <remote  name="praphull"
+           fetch="https://github.com/praphull"
+           revision="marshmallow-caf" />
+
   <default revision="refs/tags/android-6.0.1_r63"
            remote="aosp"
            sync-j="4" />
 
-  <project path="manifest" name="manifest" remote="aospa">
+  <project path="manifest" name="manifest" remote="praphull">
     <copyfile src="build-mac.sh" dest="rom-build-mac.sh" />
   </project>
 
