@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Manifest -->
-  <project path="manifest" name="AOSPA/manifest" remote="aospa" groups="aospa">
+  <project path="manifest" name="AOSPA/manifest" remote="praphull" groups="aospa">
     <copyfile src="build-mac.sh" dest="rom-build-mac.sh" />
   </project>
 
