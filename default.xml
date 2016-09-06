@@ -6,7 +6,7 @@
            review="android-review.googlesource.com" />
 
   <remote  name="aospa"
-           fetch="ssh://git@git.aospa.co/AOSPA"
+           fetch="https://github.com/AOSPA"
            review="gerrit.aospa.co"
            revision="nougat" />
 
