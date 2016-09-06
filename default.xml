@@ -15,7 +15,7 @@
   <remote  name="caf"
            fetch="git://codeaurora.org/quic/la"
            review="codeaurora.org"
-           revision="refs/tags/LA.UM.5.5_rb1.10"
+           revision="LA.UM.5.5_rb1.10"
            sync-c="true" />
 <!-- LA.BF64.1.2.3-00510-8x94.0 -->
 
