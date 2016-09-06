@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Manifest -->
-  <project path="manifest" name="praphull/aosp_manifest" remote="praphull" groups="aospa">
+  <project path="manifest" name="aosp_manifest" remote="praphull" groups="aospa">
     <copyfile src="build-mac.sh" dest="rom-build-mac.sh" />
   </project>
 
   <!-- Build repositories -->
   <remove-project name="platform/build" />
-  <project path="build" name="AOSPA/android_build" remote="aospa" groups="aospa" >
+  <project path="build" name="android_build" remote="aospa" groups="aospa" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="AOSPA/android_frameworks_base" remote="aospa" groups="pdk-cw-fs,aospa" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="aospa" groups="pdk-cw-fs,aospa" />
 
   <!-- Packages -->>
   <!-- TODO: Add ParanoidHub -->
   <remove-project name="platform/packages/apps/Settings" />
-  <project path="packages/apps/Settings" name="AOSPA/android_packages_apps_Settings" remote="aospa" groups="aospa" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aospa" groups="aospa" />
 
   <!-- Hardware -->
   <remove-project name="platform/hardware/ril" />
-  <project path="hardware/ril" name="AOSPA/android_hardware_ril" remote="aospa" groups="aospa" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="aospa" groups="aospa" />
 
   <!-- Vendor -->
-  <project path="vendor/pa" name="AOSPA/android_vendor_pa" remote="aospa" groups="aospa" >
+  <project path="vendor/pa" name="android_vendor_pa" remote="aospa" groups="aospa" >
     <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
 
