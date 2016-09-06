@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Manifest -->
-  <project path="manifest" name="aosp_manifest" remote="praphull" groups="aospa">
-    <copyfile src="build-mac.sh" dest="rom-build-mac.sh" />
-  </project>
+  <project path="manifest" name="aosp_manifest" remote="praphull" groups="aospa"/>
 
   <!-- Build repositories -->
   <remove-project name="platform/build" />
