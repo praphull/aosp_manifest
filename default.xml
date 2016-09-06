@@ -2,7 +2,8 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com" />
+           fetch="https://android.googlesource.com"
+           revision="refs/tags/android-7.0.0_r1" />
 
   <remote  name="private"
            fetch="ssh://git@git.aospa.co/AOSPA" />
@@ -15,9 +16,8 @@
   <remote  name="caf"
            fetch="git://codeaurora.org/quic/la"
            review="codeaurora.org"
-           revision="LA.UM.5.5_rb1.10"
+           revision="refs/tags/LA.BF64.1.2.3-00510-8x94.0"
            sync-c="true" />
-<!-- LA.BF64.1.2.3-00510-8x94.0 -->
 
   <remote  name="blobs"
            fetch="https://github.com/ThankYouMario"
@@ -30,8 +30,7 @@
            fetch="https://github.com/praphull"
            revision="nougat-caf" />
 
-  <default revision="refs/tags/android-7.0.0_r1"
-           remote="aosp"
+  <default remote="caf"
            sync-j="4" />
 
   <project groups="pdk-cw-fs,pdk-fs" name="device/common"/>

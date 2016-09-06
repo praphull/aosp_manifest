@@ -69,8 +69,17 @@
   <remove-project name="platform/vendor/qcom-opensource/location"/>
 
   <!-- Projects not in CAF repo for 7.0.0 -->
-<!--  <remove-project name="platform/vendor/qcom-opensource/fst-manager" />
-  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" remote="aosp" revision="refs/tags/android-7.0.0_r1" />-->
+  <remove-project name="platform/vendor/qcom-opensource/fst-manager" />
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" remote="caf" revision="LA.UM.5.5_rb1.10" />
+
+  <remove-project name="platform/external/e2fsprogs_custom"/>
+  <project name="platform/external/e2fsprogs_custom" path="external/e2fsprogs_blocks" remote="caf" revision="LA.UM.5.5_rb1.10" />
+
+  <remove-project name="platform/vendor/qcom-opensource/shortcut-fe"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" remote="caf" revision="LA.UM.5.5_rb1.10" />
+
+  <remove-project name="platform/external/json-c"/>
+  <project name="platform/external/json-c" path="external/json-c" remote="caf" revision="LA.UM.5.5_rb1.10" />
 
 </manifest>
 
